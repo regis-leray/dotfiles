@@ -1,0 +1,18 @@
+[alias]
+	a = add
+        c = commit
+        ca = commit --amend
+        cp = cherry-pick
+        cleanest = clean -ffdx
+        s = status -b
+	save = stash save
+        fixup = commit --fixup
+        autosquash = rebase -i --autosquash master
+        pf = push origin --force HEAD
+      	rh = rebase -i HEAD~2
+      	fix = commit -a -m "fix"
+      	co = checkout
+      	cob = checkout -b
+        branches = branch -a
+        stashes = stash list
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
